@@ -58,6 +58,9 @@ public:
         size_type offset;
     };
 
+    array2d(inner_array_t const& arr) : inner(arr) {}
+    array2d() = default;
+
     _line operator[](size_type i) { return _line{inner, COLS * i}; }
     _line operator[](size_type i) const { return _line{inner, COLS * i}; }
 
