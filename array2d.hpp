@@ -1,3 +1,6 @@
+#ifndef __LIBARRAY_2D_H
+#define __LIBARRAY_2D_H
+
 template<typename T, std::size_t LINES, std::size_t COLS>
 class array2d {
 public:
@@ -111,3 +114,5 @@ public:
 private:
     inner_array_t inner;
 };
+
+#endif
